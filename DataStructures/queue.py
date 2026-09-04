@@ -21,6 +21,12 @@ def is_empty (my_queue):
     if my_queue["size"] == 0:
         vacia = False
     return vacia
+
+def peek (my_queue):
+    return my_queue["elements"][0]
+
+def size (my_queue):
+    return my_queue["size"]
     
 
 
