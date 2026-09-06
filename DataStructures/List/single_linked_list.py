@@ -124,7 +124,7 @@ def remove_last(my_list):
     my_list["size"] -= 1
 
     return element
-def insert_element(my_list, pos, element):
+def insert_element(my_list, element, pos):
     if pos < 0 or pos > my_list["size"]:
         raise Exception("IndexError: list index out of range")
 
@@ -140,7 +140,7 @@ def insert_element(my_list, pos, element):
     elif pos == my_list["size"]:
         my_list["last"]["next"] = node
         my_list["last"] = node
-    
+
     else:
         searchpos = 0
         current_node = my_list["first"]
