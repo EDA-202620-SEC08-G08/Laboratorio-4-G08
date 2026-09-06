@@ -32,7 +32,7 @@ from DataStructures.List import array_list as lt
 from DataStructures.Queue import queue as q
 from DataStructures.Stack import stack as st
 
-data_dir = os.path.dirname(os.path.realpath('__file__')) + '/Data/'
+data_dir = os.path.dirname(os.path.realpath('__file__')) + '/Data/GoodReads/'
 
 """
 El controlador se encarga de mediar entre la vista y el modelo.
@@ -57,7 +57,7 @@ def new_logic():
     catalog['authors'] = lt.new_list()
     catalog['tags'] = lt.new_list()
     catalog['book_tags'] = lt.new_list()
-    catalog['books_to_read'] = None
+    catalog['books_to_read'] = lt.new_list()
     catalog["book_sublist"] = None
     return catalog
 
