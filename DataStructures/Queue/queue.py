@@ -17,10 +17,7 @@ def dequeue (my_queue, element):
     return remove
 
 def is_empty (my_queue):
-    vacia = True
-    if my_queue["size"] == 0:
-        vacia = False
-    return vacia
+    return my_queue["size"] == 0
 
 def peek (my_queue):
     return my_queue["elements"][0]
