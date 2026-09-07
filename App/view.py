@@ -67,7 +67,7 @@ def print_books_to_read(results):
     print("\nLibros por leer: \n")
     for book in results:
         print("Id del libro: " + str(book['book_id']) +
-              " Id del usuario: " + str(book['user_id']))
+              "Id del usuario: " + str(book['user_id']))
 
     
 
